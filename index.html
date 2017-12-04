@@ -45,8 +45,8 @@
         // Send random message data on every button click
         bindEvent(messageButton, 'click', function (e) {
           var institutions = document.getElementById('results').innerHTML;
+          document.cookie = "institutions="+institutions+";";
           sendMessage('' + institutions);
-          document.cookie = "i="+institutions+";";
         });
     </script>
 </body>
