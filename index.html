@@ -46,7 +46,7 @@
         bindEvent(messageButton, 'click', function (e) {
           var institutions = document.getElementById('results').innerHTML;
           document.cookie = "institutions="+institutions+";";
-          sendMessage('' + institutions);
+          sendMessage('' + institutions + ' >> ' + document.cookie);
         });
     </script>
 </body>
